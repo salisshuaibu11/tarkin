@@ -1,38 +1,31 @@
-import Link from "next/link"
-import Newsletter from "./Newsletter"
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Logo from './Logo'
 
 const navigation = {
-  tarkin: [
-    { name: 'For for now, food for the', href: '#' },
-    { name: 'Future', href: '#' }
-  ],
-  resources: [
-    { name: 'Careers', href: '#' },
-    { name: 'Trends', href: '#' },
-    { name: "Blog", href: '#' }
-  ],
   social: [
     {
-      name: 'LinkendIn',
+      name: 'Facebook',
       href: '#',
       icon: (props) => (
-        <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
-          <path 
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+          <path
             fillRule="evenodd"
+            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
             clipRule="evenodd"
-            d="M19.9951 20V19.9991H20.0001V12.6641C20.0001 9.07581 19.2276 6.31165 15.0326 6.31165C13.0159 6.31165 11.6626 7.41831 11.1101 8.46748H11.0517V6.64665H7.07422V19.9991H11.2159V13.3875C11.2159 11.6466 11.5459 9.96331 13.7017 9.96331C15.8259 9.96331 15.8576 11.95 15.8576 13.4991V20H19.9951Z M0.330078 6.64771H4.47675V20.0002H0.330078V6.64771Z M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" />
+          />
         </svg>
       ),
     },
     {
-      name: 'Messenger',
+      name: 'Instagram',
       href: '#',
       icon: (props) => (
-        <svg viewBox="0 0 21 20" fill="currentColor" {...props}>
-          <path 
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+          <path
             fillRule="evenodd"
+            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
             clipRule="evenodd"
-            d="M0.986816 9.25917C0.986816 12.1725 2.44015 14.7717 4.71265 16.4692V20L8.11765 18.1317C9.02598 18.3825 9.98848 18.5192 10.986 18.5192C16.5085 18.5192 20.986 14.3742 20.986 9.26C20.9868 4.14583 16.5093 0 10.9868 0C5.46432 0 0.986816 4.145 0.986816 9.25917H0.986816ZM9.93182 6.66583L12.5402 9.38167L17.446 6.66583L11.9793 12.4675L9.43348 9.7525L4.46432 12.4683L9.93182 6.66583Z"/>
+          />
         </svg>
       ),
     },
@@ -40,112 +33,89 @@ const navigation = {
       name: 'Twitter',
       href: '#',
       icon: (props) => (
-        <svg viewBox="0 0 21 20" fill="currentColor" {...props}>
-          <path 
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M18.9189 5.9275C19.7322 5.35 20.4164 4.62917 20.9739 3.79917V3.79833C20.2297 4.12417 19.438 4.34083 18.6114 4.44583C19.4614 3.93833 20.1105 3.14083 20.4155 2.18C19.623 2.6525 18.748 2.98583 17.8155 3.1725C17.063 2.37083 15.9905 1.875 14.8205 1.875C12.5505 1.875 10.723 3.7175 10.723 5.97583C10.723 6.30083 10.7505 6.61333 10.818 6.91083C7.40971 6.74417 4.39304 5.11083 2.36638 2.62167C2.01304 3.23583 1.80471 3.93833 1.80471 4.69417C1.80471 6.11417 2.53554 7.3725 3.62638 8.10167C2.96721 8.08917 2.32138 7.8975 1.77388 7.59667V7.64167C1.77388 9.63417 3.19471 11.2892 5.05888 11.6708C4.72471 11.7625 4.36138 11.8058 3.98388 11.8058C3.72138 11.8058 3.45638 11.7908 3.20804 11.7358C3.73888 13.3592 5.24721 14.5533 7.03888 14.5925C5.64388 15.6833 3.87221 16.3408 1.95471 16.3408C1.61888 16.3408 1.29638 16.3258 0.973877 16.285C2.79054 17.4558 4.94221 18.125 7.26388 18.125C14.4997 18.125 19.2155 12.0883 18.9189 5.9275Z"/>
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
         </svg>
       ),
     },
     {
-      name: 'Twoo',
+      name: 'GitHub',
       href: '#',
       icon: (props) => (
-        <svg viewBox="0 0 21 20" fill="currentColor" {...props}>
-          <path 
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+          <path
             fillRule="evenodd"
+            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
             clipRule="evenodd"
-            d="M9.39154 14.0991C9.44487 14.0541 9.49904 14.0075 9.54904 13.9583C6.76487 16.69 2.22487 15.415 1.16071 11.5625V11.5566C-0.266793 6.31496 5.75237 2.33329 9.54737 5.99996C9.62654 6.08412 14.869 11.675 14.5357 11.3191H14.5507C15.3332 12.1258 16.4649 12.0375 17.1382 11.3325C17.8624 10.5758 17.8882 9.34079 17.1774 8.57162C16.0549 7.27912 13.8507 8.24496 14.0615 10.1608L12.7999 8.87579L11.3365 7.47662C11.6382 6.87746 12.034 6.35329 12.5299 5.89996C12.4765 5.94579 12.4224 5.99329 12.3724 6.04079C15.1674 3.29912 19.704 4.60412 20.7607 8.43996V8.44496C22.1915 13.6858 16.1657 17.6675 12.374 14.0008C12.2965 13.9175 7.05737 8.29162 7.38904 8.64829L7.38571 8.63579C7.37237 8.63579 7.37237 8.62329 7.37237 8.62329C6.55071 7.77579 5.43654 7.90329 4.78487 8.59746C4.05987 9.35412 4.03487 10.5891 4.74737 11.3466C5.82071 12.6091 8.07237 11.6733 7.86071 9.71912C7.94237 9.80329 10.7682 12.7041 10.5882 12.52C10.1307 13.4325 9.61904 13.8516 9.39154 14.0991Z"/>
+          />
+        </svg>
+      ),
+    },
+    {
+      name: 'Dribbble',
+      href: '#',
+      icon: (props) => (
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+          <path
+            fillRule="evenodd"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+            clipRule="evenodd"
+          />
         </svg>
       ),
     },
   ],
 }
 
-export default function Footer() {
+export default function Example() {
   return (
-    <footer className="bg-indigo-900 pt-10 px-2" aria-labelledby="footer-heading">
-      <div className="max-w-4xl mx-auto">
-        <Newsletter />
-      </div>
-      <div className="text-white mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-2 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-base font-medium">Tarkin</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.tarkin.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base hover:text-gray-300">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex items-center space-x-2 mt-2">
-                  {navigation.social.map((item) => (
-                    <a key={item.name} href={item.href} className="hover:text-gray-300">
-                      <span className="sr-only">{item.name}</span>
-                      <item.icon className="w-6" aria-hidden="true" />
-                    </a>
-                  ))}
-                </div>
-              </div>
+    <footer className="bg-green-primary" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
+          <div className="grid grid-cols-2 gap-8 xl:col-span-4">
+            <div className="cols-span-4">
+              <Logo />
+              <p className='text-xl mt-3 font-bold text-white'>Making the world’s food supply more inclusive</p>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-base font-medium">Resources</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.resources.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base hover:text-gray-300">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-medium">Contact Us</h3>
-                <ul role="list" className="mt-4 space-y-1">
-                  <li>
-                    <h4 className="text-base hover:text-gray-300">
-                      24, New Dawaki Road, 
-                    </h4>
-                  </li>
-                  <li>
-                    <h4 className="text-base hover:text-gray-300">
-                      Off Isa Kaita Road, Kaduna.
-                    </h4>
-                  </li>
-                </ul>
-
-                <ul role="list" className="mt-4 space-y-1">
-                  <li>
-                    <h4 className="text-base hover:text-gray-300">
-                      Email: ​hello@tarkin.co
-                    </h4>
-                  </li>
-                  <li>
-                    <h4 className="text-base hover:text-gray-300">
-                      Phone: 0814 44 550 25
-                    </h4>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          </div>
+          <div className="mt-12 xl:mt-0">
+            <ul className='text-lg text-white font-bold space-y-6'>
+              <li>
+                <a>About us</a>
+              </li>
+              <li>
+                <a>Contact us</a>
+              </li>
+              <li>
+                <a>FAQs</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 items-center md:order-2">
-            <Link href="/terms">Terms and Conditions</Link>
-            <span>.</span>
-            <Link href="/privacy">Privacy Policy</Link>
+
+        <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+          <div className="flex space-x-6 md:order-2">
+            {navigation.social.map((item) => (
+              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
           </div>
-          <p className="mt-8 text-base md:order-1 md:mt-0">
-            &copy; 2022 Tarkin, Inc. All rights reserved.
+          <ul className='flex'>
+            <li>
+              <a>Terms and Conditions</a>
+            </li>
+            <li>.</li>
+            <li>
+              <a>Privacy Policy</a>
+            </li>
+          </ul>
+          <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
+            &copy; 2020 Your Company, Inc. All rights reserved.
           </p>
         </div>
       </div>

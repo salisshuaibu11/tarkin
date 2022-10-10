@@ -1,35 +1,47 @@
-import Image from "next/image"
+import { ArrowRightIcon } from "@heroicons/react/24/outline"
+import Navbar from "./Navbar"
 
 export default function HeroSection() {
   return (
-    <main className="bg-gradient-to-br from-gray-300 to-gray-200 mt-16 sm:mt-0 h-screen">
-      <div className="mx-auto max-w-7xl">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-          <div className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
-            <div>
-              <h1 className="mt-4 text-5xl tracking-tight text-indigo-900 sm:mt-5 sm:leading-none lg:mt-6">
-               Supporting African <span className="text-green-600">Farmers</span> Build a Resilient Food Supply Chain
-              </h1>
-              <p className="mt-3 text-base text-green-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                We are using technology to reduce post harvest loss encountered by farmers while improving access to high quality commodities.
-              </p>
-              <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
-                <button
-                  type="button"
-                  className="inline-flex items-center border border-indigo-600 px-8 py-2 text-base rounded-sm font-medium text-indigo-600 shadow-sm hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  Learn more
-                </button>
+    <>
+      <main>
+          {/* Hero card */}
+        <div className="relative">
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+            <div className="relative sm:overflow-hidden">
+              <Navbar />
+              <div className="absolute inset-0">
+                <img
+                  className="h-full w-full object-cover"
+                  src="/hero.png"
+                  alt="People working on laptops"
+                />
+                <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
+              </div>
+              <div className="relative px-4 py-10 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                <h1 className="text-4xl font-bold tracking-tight space-y-1 sm:text-5xl lg:text-6xl">
+                  <span className="block text-white">Helping Farmers</span>
+                  <span className="block text-white">Build a Resilient</span>
+                  <span className="block text-white">Food Supply Chain</span>
+                </h1>
+                <p className="mt-6 max-w-xl font-normal text-left text-lg text-white">
+                  We are using technology to reduce post harvest loss encountered by farmers while improving access to high quality commodities.
+                </p>
+                <div className="mt-10 max-w-sm">
+                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                    <a
+                      href="#"
+                      className="uppercase bg-green-secondary flex items-center justify-center w-52 rounded-sm text-white px-2 py-4 text-base font-normal shadow-sm hover:bg-green-400 sm:px-8"
+                    >
+                      <span>learn more</span>
+                      <ArrowRightIcon className="text-white w-8 h-5 font-bold" fill="white"/>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
-            <div className="sm:max-w-md sm:mx-auto sm:rounded-lg sm:overflow-hidden">
-              <Image width={100} height={100} layout='responsive' src="/heroLogo.png" alt=""/>
-            </div>
-          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   )
 }
